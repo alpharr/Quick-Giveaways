@@ -1,0 +1,145 @@
+options:	
+	main: &b&lGIVEAWAY &8|
+	error: &c&lError &8|
+	perm: admin
+command /giveaway [<text>] [<text>]:
+	permission: {@perm}
+	permission message: &cYou do not have ""{@perm}"" permission to execute this!
+	trigger:
+		if arg 1 is not set:
+			send "&l"
+			send "&b&lGiveaway Skript"
+			send "&9By Alphar"
+			send "&7&o(/giveaway help)"
+			send "&l"
+			stop
+		if arg 1 is set:
+			if arg 1 is "help":
+				send "&l"
+				send "&bGiveaway Syntax"
+				send "&7/giveaway <help|time> <giveaway name>"
+				send "&l"
+				stop
+		if arg 1 is set:
+			if arg 1 is not "1m" or "2m" or "3m" or "4m" or "5m" or "6m" or "7m" or "8m" or "9m" or "10m":
+				send "&cYou can only do 1m - 10m !"
+				stop
+		if arg 1 is set:
+			if arg 1 is "1m":
+				if arg 2 is set:
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 1m)"
+					wait 30 seconds
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 30s)"
+					wait 30 seconds
+					broadcast "{@main} &eAnnnnd &a&l%random player out of all players%&e WON!!"
+					stop
+		if arg 1 is set:
+			if arg 1 is "2m":
+				if arg 2 is set:
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 2m)"
+					wait 1 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 1m)"
+					wait 1 minute
+					broadcast "{@main} &eAnnnnd &a&l%random player out of all players%&e WON!!"
+					stop
+		if arg 1 is set:
+			if arg 1 is "3m":
+				if arg 2 is set:
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 3m)"
+					wait 1 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 2m)"
+					wait 1 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 1m)"
+					wait 1 minute
+					broadcast "{@main} &eAnnnnd &a&l%random player out of all players%&e WON!!"
+					stop
+		if arg 1 is set:
+			if arg 1 is "4m":
+				if arg 2 is set:
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 4m)"
+					wait 2 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 2m)"
+					wait 1 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 1m)"
+					wait 1 minute
+					broadcast "{@main} &eAnnnnd &a&l%random player out of all players%&e WON!!"
+					stop
+		if arg 1 is set:
+			if arg 1 is "5m":
+				if arg 2 is set:
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 5m)"
+					wait 2 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 3m)"
+					wait 2 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 1m)"
+					wait 1 minute
+					broadcast "{@main} &eAnnnnd &a&l%random player out of all players%&e WON!!"
+					stop
+		if arg 1 is set:
+			if arg 1 is "6m":
+				if arg 2 is set:
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 6m)"
+					wait 2 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 4m)"
+					wait 3 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 1m)"
+					wait 1 minute
+					broadcast "{@main} &eAnnnnd &a&l%random player out of all players%&e WON!!"
+					stop
+		if arg 1 is set:
+			if arg 1 is "6m":
+				if arg 2 is set:
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 6m)"
+					wait 2 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 4m)"
+					wait 3 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 1m)"
+					wait 1 minute
+					broadcast "{@main} &eAnnnnd &a&l%random player out of all players%&e WON!!"
+					stop
+		if arg 1 is set:
+			if arg 1 is "7m":
+				if arg 2 is set:
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 7m)"
+					wait 2 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 5m)"
+					wait 3 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 2m)"
+					wait 2 minute
+					broadcast "{@main} &eAnnnnd &a&l%random player out of all players%&e WON!!"
+					stop
+		if arg 1 is set:
+			if arg 1 is "8m":
+				if arg 2 is set:
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 8m)"
+					wait 6 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 2m)"
+					wait 1 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 1m)"
+					wait 1 minute
+					broadcast "{@main} &eAnnnnd &a&l%random player out of all players%&e WON!!"
+					stop
+		if arg 1 is set:
+			if arg 1 is "9m":
+				if arg 2 is set:
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 9m)"
+					wait 6 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 3m)"
+					wait 2 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 1m)"
+					wait 1 minute
+					broadcast "{@main} &eAnnnnd &a&l%random player out of all players%&e WON!!"
+					stop
+		if arg 1 is set:
+			if arg 1 is "10m":
+				if arg 2 is set:
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 10m)"
+					wait 5 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 5m)"
+					wait 4 minute
+					broadcast "{@main} &a%arg 2% &aGiveAway! &7&o(Ends in 1m)"
+					wait 1 minute
+					broadcast "{@main} &eAnnnnd &a&l%random player out of all players%&e WON!!"
+					stop
+				else:
+					send "{@error} &cYou need to say what you're giving away!"
